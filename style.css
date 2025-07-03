@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  width: 100%;
+}
+.left {
+  flex: 1;
+  background: #F2F2F2;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.left h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.left h2 {
+  color: #5d5d5d;
+  margin-bottom: 20px;
+}
+.left p {
+  color: #000000;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+.left .social a {
+  color: #7F8CAA;
+  text-decoration: none;
+  margin-right: 15px;
+}
+.social a {
+  text-decoration: none;
+  color: #000; /* Warna default teks */
+  transition: color 0.3s ease;
+}
+
+.social a:hover {
+  color: #b60000; /* Warna saat hover, bisa diganti sesuai selera */
+}
+.right {
+  flex: 1;
+  background: url('img/riss.jpg') no-repeat center center/cover;
+  position: relative;
+}
+.menu-btn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.menu {
+  position: absolute;
+  top: 70px;
+  right: 30px;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  display: none;
+  flex-direction: column;
+}
+.menu a {
+  padding: 10px 20px;
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #eee;
+}
+.menu a:hover {
+  background: #f3f3f3;
+}

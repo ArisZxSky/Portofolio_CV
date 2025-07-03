@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HEADER UTAMA */
+header {
+  background-color: #EAE4D5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: fixed; /* Menempel ke atas */
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav a {
+  margin-left: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000;
+}
+body {
+  padding-top: 70px; /* Sesuaikan tinggi header */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #F2F2F2;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 40px;
+  color: #666;
+}
+
+.content {
+  display: flex;
+  gap: 40px;
+}
+
+.left-column,
+.right-column {
+  flex: 1;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.timeline-item {
+  border-left: 3px solid #23c6c8;
+  padding-left: 15px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border: 3px solid #23c6c8;
+  border-radius: 50%;
+  position: absolute;
+  left: -7px;
+  top: 5px;
+}
+
+.italic {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.duration {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* Tombol kanan "MENU" */
+.menu-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  color: #000;
+  padding: 5px 10px;
+}
+
+/* Menu dropdown */
+.menu {
+  position: absolute;
+  top: 65px;
+  right: 30px;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  display: none;
+  flex-direction: column;
+  min-width: 150px;
+}
+
+.menu a {
+  padding: 10px 20px;
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #eee;
+}
+.menu a:hover {
+  background: #f3f3f3;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+  color: #000;
+}
